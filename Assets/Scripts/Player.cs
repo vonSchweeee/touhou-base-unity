@@ -51,7 +51,8 @@ public class Player : MonoBehaviour
     private IEnumerator FireContinuosly()
     {
         while (true) {
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            var bulletPos = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 1);
+            GameObject bullet = Instantiate(bulletPrefab, bulletPos, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(0, bulletSpeed);
             yield return new WaitForSeconds(bulletFiringPeriod);
         }
