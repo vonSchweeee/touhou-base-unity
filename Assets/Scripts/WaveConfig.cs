@@ -35,11 +35,11 @@ public class WaveConfig : ScriptableObject
     public float RandomSpawnRateAmount { get => _randomSpawnRateAmount; }
 
     [SerializeField]
-    private int _numberOfEnemies = 5;
-    public int NumberOfEnemies { get => _numberOfEnemies; }
+    private int _enemyCount = 5;
+    public int EnemyCount { get => _enemyCount; }
 
     [SerializeField]
-    private float _moveSpeed = 2f;
-    public float MyProperty { get => _moveSpeed; }
+    private float _enemyMoveSpeed = 2;
+    public float EnemyMoveSpeed { get => _enemyMoveSpeed; }
 
 }

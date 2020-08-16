@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1147176412289043550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546136102654933353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db42792b8e7146242b0add51a0825187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveConfig: {fileID: 11400000, guid: 50aa4c936e5e5df48aacc94c496ec56a, type: 2}
+  moveSpeed: 2
+--- !u!1001 &3267254422428822672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1009421895859885511, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1257353548764820778, guid: 3a7a0f3dc629ad1479b9ef44950539a7, type: 3}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885560, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009421895859885561, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+      propertyPath: m_Name
+      value: GreenFairyEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+--- !u!1 &2546136102654933353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1009421895859885561, guid: 1e3040c1e020c6d4d9e71306cae93f23, type: 3}
+  m_PrefabInstance: {fileID: 3267254422428822672}
+  m_PrefabAsset: {fileID: 0}
