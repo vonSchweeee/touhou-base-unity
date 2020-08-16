@@ -20,8 +20,7 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = startingWave; i < waveConfigs.Count; i++)
         {
-            var currentWave = waveConfigs[i];
-            yield return StartCoroutine(SpawnWaveEnemies(currentWave));
+            yield return StartCoroutine(SpawnWaveEnemies(waveConfigs[i]));
         }
     }
 

@@ -11,30 +11,40 @@ public class EnemyMovement : MonoBehaviour
 
     public void SetWaveConfig(WaveConfig config)
     {
+        Debug.Log("Wave config setted");
         this.waveConfig = config;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        waypoints = waveConfig.Waypoints;
-        transform.position = waypoints[0].position;
+        while (waveConfig == null)
+        {
+            yield return new WaitForEndOfFrame();
+        }
+        if (waveConfig != null) 
+        {
+            waypoints = waveConfig.Waypoints;
+            transform.position = waypoints[0].position;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (waypointIndex < waypoints.Count)
+        if (waveConfig != null)
         {
-            var frameSpeed = waveConfig.EnemyMoveSpeed * Time.deltaTime;
-            var targetPos =  waypoints[waypointIndex].transform.position;
-            transform.position = Vector2.MoveTowards(transform.position, targetPos, frameSpeed);
-            if (targetPos == transform.position)
-                waypointIndex++;
-        }
-        else
-        {
-            Destroy(this.gameObject);
+            if (waypointIndex < waypoints.Count)
+            {
+                var frameSpeed = waveConfig.EnemyMoveSpeed * Time.deltaTime;
+                var targetPos =  waypoints[waypointIndex].transform.position;
+                transform.position = Vector2.MoveTowards(transform.position, targetPos, frameSpeed);
+                if (targetPos == transform.position)
+                    waypointIndex++;
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
